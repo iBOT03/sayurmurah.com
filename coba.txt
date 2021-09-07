@@ -1,0 +1,10 @@
+super admin : hak akses full, bisa menambah pasar, mengatur reward user
+ admin ; menerima orderan membelikan sayur, tambah product
+end user : memilih jam dan tanggal pengantaran sayur, reward setiap pembelian,
+mitra : bekerja sama dengan sayur murah.com
+ada official store
+
+
+tambahan ;
+perlu ongkir
+
