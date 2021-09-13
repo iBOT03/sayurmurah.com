@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
+Route::get('/', function () {
+    return view('welocome', ['title' => 'sayurmurah.com']);
+});
+
+Route::get('home', function ()
+{
     return view('home');
 });
