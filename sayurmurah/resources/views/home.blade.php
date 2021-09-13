@@ -27,7 +27,7 @@
       <!-- Brand -->
       <div class="sidenav-header  align-items-center">
         <a class="navbar-brand" href="javascript:void(0)">
-          <img src="{{ assets('style/assets/img/brand/blue.png') }}" class="navbar-brand-img" alt="...">
+          <img src="{{ asset('style/assets/img/brand/blue.png') }}" class="navbar-brand-img" alt="...">
           {{-- <img src="{{ assets('style/') }}assets/img/brand/blue.png" class="navbar-brand-img" alt="..."> --}}
         </a>
       </div>
@@ -37,49 +37,49 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="{{ assets('style/examples/dashboard.html') }}">
+              <a class="nav-link active" href="{{ asset('style/examples/dashboard.html') }}">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ assets('style/examples/icons.html') }}">
+              <a class="nav-link" href="{{ asset('style/examples/icons.html') }}">
                 <i class="ni ni-planet text-orange"></i>
                 <span class="nav-link-text">Icons</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ assets('style/examples/map.html') }}">
+              <a class="nav-link" href="{{ asset('style/examples/map.html') }}">
                 <i class="ni ni-pin-3 text-primary"></i>
                 <span class="nav-link-text">Google</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ assets('style/examples/profile.html') }}">
+              <a class="nav-link" href="{{ asset('style/examples/profile.html') }}">
                 <i class="ni ni-single-02 text-yellow"></i>
                 <span class="nav-link-text">Profile</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ assets('style/examples/tables.html') }}">
+              <a class="nav-link" href="{{ asset('style/examples/tables.html') }}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Tables</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ assets('style/examples/login.html') }}">
+              <a class="nav-link" href="{{ asset('style/examples/login.html') }}">
                 <i class="ni ni-key-25 text-info"></i>
                 <span class="nav-link-text">Login</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ assets('style/examples/register.html') }}">
+              <a class="nav-link" href="{{ asset('style/examples/register.html') }}">
                 <i class="ni ni-circle-08 text-pink"></i>
                 <span class="nav-link-text">Register</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ assets('style/examples/upgrade.html') }}">
+              <a class="nav-link" href="{{ asset('style/examples/upgrade.html') }}">
                 <i class="ni ni-send text-dark"></i>
                 <span class="nav-link-text">Upgrade</span>
               </a>
