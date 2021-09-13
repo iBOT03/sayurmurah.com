@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welocome', ['title' => 'sayurmurah.com']);
 });
 
-Route::get('home', function ()
+Route::get('admin', function ()
 {
-    return view('home');
+    return view('admin/dashboard');
 });
