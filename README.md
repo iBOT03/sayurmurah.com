@@ -1,6 +1,10 @@
-Dokumentasi
+**Dokumentasi**
 
 **DATABASE MIGRATIONS**
+
+**USE**
+php artisan migrate
+
 ***File** :
 sayurmurah->database->migrations
 
