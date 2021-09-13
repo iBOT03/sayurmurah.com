@@ -8772,7 +8772,7 @@ a.close.disabled
 
 .bg-primary
 {
-    background-color: #5e72e4 !important;
+    background-color: #317C1E !important;
 }
 
 a.bg-primary:hover,
@@ -21401,7 +21401,7 @@ textarea[resize='horizontal']
 .navbar-vertical .navbar-brand > img
 {
     max-width: 100%;
-    max-height: 2rem;
+    /* max-height: 2rem; */
 }
 @media (min-width: 768px)
 {
