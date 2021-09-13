@@ -506,6 +506,8 @@ h1,
 .h1
 {
     font-size: 1.625rem;
+    color: white; 
+    text-shadow: 5px 5px 10px black;
 }
 @media (max-width: 1200px)
 {
@@ -622,6 +624,7 @@ small,
 {
     font-size: 80%;
     font-weight: 400;
+    margin-left: 7.1rem;
 }
 
 mark,
@@ -6291,8 +6294,7 @@ input[type='button'].btn-block
 .card-body
 {
     min-height: 1px;
-    padding: 1.5rem; 
-
+    padding: 1.5rem;
     flex: 1 1 auto;
 }
 
@@ -7335,7 +7337,8 @@ a.badge:focus
 .media
 {
     display: flex;
-
+    /* margin-left: 45em;
+    padding-left: 45em; */
     align-items: flex-start;
 }
 
@@ -15447,6 +15450,7 @@ button.bg-darker:focus
     .px-lg-5
     {
         padding-left: 3rem !important;
+        box-shadow: 10px 10px 30px black;
     }
     .p-lg--9
     {
@@ -20420,7 +20424,7 @@ textarea[resize='horizontal']
 }
 .icon-lg + .icon-text
 {
-    width: calc(100% - $icon-size-lg - 1);
+    width: calc(100% - icon-size-lg - 1);
 }
 
 .icon-sm
@@ -20435,7 +20439,7 @@ textarea[resize='horizontal']
 }
 .icon-sm + .icon-text
 {
-    width: calc(100% - $icon-size-sm - 1);
+    width: calc(100% - icon-size-sm - 1);
 }
 
 .icon-xs
@@ -20450,7 +20454,7 @@ textarea[resize='horizontal']
 }
 .icon-xs + .icon-text
 {
-    width: calc(100% - $icon-size-xs - 1);
+    width: calc(100% - icon-size-xs - 1);
 }
 
 .icon-shape
