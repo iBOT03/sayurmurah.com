@@ -59,7 +59,7 @@
                     </h6>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ asset('style/examples/profile.html') }}">
+                            <a class="nav-link" href="admin/akun">
                                 <i class="ni ni-single-02 text-green"></i>
                                 <span class="nav-link-text">Kelola Akun</span>
                             </a>
