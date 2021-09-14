@@ -21,3 +21,11 @@ Route::get('admin', function ()
 {
     return view('admin/dashboard');
 });
+Route::get('admin/akun', function ()
+{
+    return view('admin/akun');
+});
+Route::get('registrasi', function ()
+{
+    return view('userRegister');
+});
