@@ -25,3 +25,7 @@ Route::get('admin/akun', function ()
 {
     return view('admin/akun');
 });
+Route::get('registrasi', function ()
+{
+    return view('userRegister');
+});
