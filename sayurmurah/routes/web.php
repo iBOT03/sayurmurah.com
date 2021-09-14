@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welocome', ['title' => 'sayurmurah.com']);
+    return view('user', ['title' => 'sayurmurah.com']);
 });
 
 Route::get('admin', function ()
