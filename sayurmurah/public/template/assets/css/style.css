@@ -1509,7 +1509,7 @@ form.example input[type=text] {
 
 .carousel-control-next {
     margin: 150px 50px 0px 50px;
-    
+    width: 100px;
 }
 .carousel-control-next-icon{
   color: rgb(0, 0, 0);
@@ -1519,7 +1519,7 @@ form.example input[type=text] {
 
 .carousel-control-prev{
     margin: 150px 50px 0px 50px;
-    
+    width: 100px;
 }
 .carousel-control-prev-icon{
   color: rgb(0, 0, 0);
