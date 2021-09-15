@@ -14,18 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welocome', ['title' => 'sayurmurah.com']);
+    return view('user', ['title' => 'sayurmurah.com']);
 });
 
-Route::get('admin', function ()
-{
+Route::get('admin', function () {
     return view('admin/dashboard');
 });
-Route::get('admin/akun', function ()
-{
+Route::get('admin/akun', function () {
     return view('admin/kelolaakun/akun');
 });
-Route::get('admin/tambahakun', function ()
-{
+Route::get('admin/tambahakun', function () {
     return view('admin/kelolaakun/tambahakun');
+});
+Route::get('registrasi', function () {
+    return view('userRegister');
 });
