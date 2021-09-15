@@ -23,5 +23,9 @@ Route::get('admin', function ()
 });
 Route::get('admin/akun', function ()
 {
-    return view('admin/akun');
+    return view('admin/kelolaakun/akun');
+});
+Route::get('admin/tambahakun', function ()
+{
+    return view('admin/kelolaakun/tambahakun');
 });
