@@ -155,7 +155,7 @@ url("./fonts/bootstrap-icons.woff?856008caa5eb66df68595e734e59580d") format("wof
 .bi-battery-half::before { content: "\f187"; }
 .bi-battery::before { content: "\f188"; }
 .bi-bell-fill::before { content: "\f189"; }
-.bi-bell::before { content: "\f18a"; }
+.bi-bell::before { content: "\f18a"; font-size: x-large;}
 .bi-bezier::before { content: "\f18b"; }
 .bi-bezier2::before { content: "\f18c"; }
 .bi-bicycle::before { content: "\f18d"; }
@@ -339,7 +339,7 @@ url("./fonts/bootstrap-icons.woff?856008caa5eb66df68595e734e59580d") format("wof
 .bi-cart-plus::before { content: "\f23f"; }
 .bi-cart-x-fill::before { content: "\f240"; }
 .bi-cart-x::before { content: "\f241"; }
-.bi-cart::before { content: "\f242"; }
+.bi-cart::before { content: "\f242"; font-size: x-large;}
 .bi-cart2::before { content: "\f243"; }
 .bi-cart3::before { content: "\f244"; }
 .bi-cart4::before { content: "\f245"; }

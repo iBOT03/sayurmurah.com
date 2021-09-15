@@ -46,7 +46,7 @@
                 <!-- Uncomment below if you prefer to use an text logo -->
                 <!-- <h1><a href="index.html">NewBiz</a></h1> -->
                 <a href="{{ asset('template/index.html') }}"><img src="{{ asset('template/assets/img/logo.png') }}"
-                  style="margin-right:30px" alt="" class="img-fluid"></a>
+                  style="margin:20px" alt="" class="img-fluid"></a>
             </div>
 
             <nav id="navbar" class="navbar">
@@ -64,8 +64,7 @@
                     </form>
                     {{-- navbar --}}
                     <div class="btn"><i class="bi bi-cart" style="color: #317C1E; font-size:x-larges;" ></i></div>
-                    {{-- <div class="btn" > <img src="{{ asset('template/assets/img/cart.svg') }}" alt=""> </div>
-                    <div class="btn" style="margin-right:5px"> <img src="{{ asset('template/assets/img/notif.svg') }}"  alt=""> </div> --}}
+                    <div class="btn"><i class="bi bi-bell" style="color: #317C1E; font-size:x-larges;" ></i></div>
                     <button type="button" class="btn btn-outline-success" style="margin-right:10px">Daftar</button>
                     <button type="button" class="btn btn-success">Masuk</button>
 
