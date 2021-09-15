@@ -18372,7 +18372,7 @@ a.text-darker:focus
 }
 .btn:not(:last-child)
 {
-    /* margin-bottom: 1.5rem; */
+    margin-bottom: 1.5rem;
 }
 .btn i:not(:first-child),
 .btn svg:not(:first-child)

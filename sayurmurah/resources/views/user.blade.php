@@ -57,7 +57,7 @@
                     {{-- navbar --}}
                     <div class="btn"><i class="bi bi-cart" style="color: #317C1E; font-size:x-larges;" ></i></div>
                     <div class="btn"><i class="bi bi-bell" style="color: #317C1E; font-size:x-larges;" ></i></div>
-                    <button type="button" class="btn btn-outline-success" style="margin-right:10px">Daftar</button>
+                    <button type="button" class="btn btn-outline-success" style="margin-right:10px; margin-left: 10px">Daftar</button>
                     <button type="button" class="btn btn-success">Masuk</button>
 
                 </ul>
