@@ -17,15 +17,15 @@ Route::get('/', function () {
     return view('user', ['title' => 'sayurmurah.com']);
 });
 
-Route::get('admin', function ()
-{
+Route::get('admin', function () {
     return view('admin/dashboard');
 });
-Route::get('admin/akun', function ()
-{
-    return view('admin/akun');
+Route::get('admin/akun', function () {
+    return view('admin/kelolaakun/akun');
 });
-Route::get('registrasi', function ()
-{
+Route::get('admin/tambahakun', function () {
+    return view('admin/kelolaakun/tambahakun');
+});
+Route::get('registrasi', function () {
     return view('userRegister');
 });

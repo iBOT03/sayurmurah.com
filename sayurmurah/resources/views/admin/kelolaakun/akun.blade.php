@@ -214,10 +214,10 @@
                 <div class="col-xl-12">
                     <div class="card bg-white">
                         <div class="card-header bg-transparent">
-                            <button class="btn btn-icon btn-primary" type="button">
+                            <a href="tambahakun" class="btn btn-icon btn-success" type="button">
                                 <span class="btn-inner--icon"><i class="ni ni-fat-add"></i></span>
                                 <span class="btn-inner--text">Tambah Akun</span>
-                            </button>
+                            </a>
                             {{-- <div class="dropdown" style="float:right;">
                                 <button class="dropbtn btn btn-icon btn-secondary" type="button" style="float: right">
                                     <span class="btn-inner--icon"><i class="ni ni-bold-down"></i></span>
@@ -306,19 +306,11 @@
                                                         <td>
                                                             <span class="badge badge-success">Aktif</span>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <div class="dropdown">
-                                                                <a class="btn btn-sm btn-icon-only text-light" href="#"
-                                                                    role="button" data-toggle="dropdown"
-                                                                    aria-haspopup="true" aria-expanded="false">
-                                                                    <i class="fas fa-ellipsis-v"></i>
-                                                                </a>
-                                                                <div
-                                                                    class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                                    <a class="dropdown-item" href="#">Aktif</a>
-                                                                    <a class="dropdown-item" href="#">Non-Aktif</a>
-                                                                </div>
-                                                            </div>
+                                                        <td>
+                                                            <a href="#" class="btn btn-icon btn-warning" type="button">
+                                                                <span class="btn-inner--icon text-light"><i class="ni ni-zoom-split-in"></i></span>
+                                                                <span class="btn-inner--text text-light">Detail</span>
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -340,19 +332,11 @@
                                                         <td>
                                                             <span class="badge badge-success">Aktif</span>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <div class="dropdown">
-                                                                <a class="btn btn-sm btn-icon-only text-light" href="#"
-                                                                    role="button" data-toggle="dropdown"
-                                                                    aria-haspopup="true" aria-expanded="false">
-                                                                    <i class="fas fa-ellipsis-v"></i>
-                                                                </a>
-                                                                <div
-                                                                    class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                                    <a class="dropdown-item" href="#">Aktif</a>
-                                                                    <a class="dropdown-item" href="#">Non-Aktif</a>
-                                                                </div>
-                                                            </div>
+                                                        <td>
+                                                            <a href="#" class="btn btn-icon btn-warning" type="button">
+                                                                <span class="btn-inner--icon text-light"><i class="ni ni-zoom-split-in"></i></span>
+                                                                <span class="btn-inner--text text-light">Detail</span>
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -374,19 +358,11 @@
                                                         <td>
                                                             <span class="badge badge-danger">Non-Aktif</span>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <div class="dropdown">
-                                                                <a class="btn btn-sm btn-icon-only text-light" href="#"
-                                                                    role="button" data-toggle="dropdown"
-                                                                    aria-haspopup="true" aria-expanded="false">
-                                                                    <i class="fas fa-ellipsis-v"></i>
-                                                                </a>
-                                                                <div
-                                                                    class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                                    <a class="dropdown-item" href="#">Aktif</a>
-                                                                    <a class="dropdown-item" href="#">Non-Aktif</a>
-                                                                </div>
-                                                            </div>
+                                                        <td>
+                                                            <a href="#" class="btn btn-icon btn-warning" type="button">
+                                                                <span class="btn-inner--icon text-light"><i class="ni ni-zoom-split-in"></i></span>
+                                                                <span class="btn-inner--text text-light">Detail</span>
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -408,19 +384,11 @@
                                                         <td>
                                                             <span class="badge badge-success">Aktif</span>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <div class="dropdown">
-                                                                <a class="btn btn-sm btn-icon-only text-light" href="#"
-                                                                    role="button" data-toggle="dropdown"
-                                                                    aria-haspopup="true" aria-expanded="false">
-                                                                    <i class="fas fa-ellipsis-v"></i>
-                                                                </a>
-                                                                <div
-                                                                    class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                                    <a class="dropdown-item" href="#">Aktif</a>
-                                                                    <a class="dropdown-item" href="#">Non-Aktif</a>
-                                                                </div>
-                                                            </div>
+                                                        <td>
+                                                            <a href="#" class="btn btn-icon btn-warning" type="button">
+                                                                <span class="btn-inner--icon text-light"><i class="ni ni-zoom-split-in"></i></span>
+                                                                <span class="btn-inner--text text-light">Detail</span>
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                 </tbody>

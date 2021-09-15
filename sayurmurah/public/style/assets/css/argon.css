@@ -218,14 +218,14 @@ a
 {
     text-decoration: none;
 
-    color: #5e72e4;
+    color: #2dce89;
     background-color: transparent;
 }
 a:hover
 {
     text-decoration: none; 
 
-    color: #233dd2;
+    color: #317C1E;
 }
 
 a:not([href])
@@ -3441,8 +3441,8 @@ fieldset:disabled a.btn
 .btn-success:hover
 {
     color: #fff;
-    border-color: #2dce89; 
-    background-color: #2dce89;
+    border-color: #317C1E; 
+    background-color: #317C1E;
 }
 .btn-success:focus,
 .btn-success.focus
@@ -3561,8 +3561,8 @@ fieldset:disabled a.btn
 .btn-danger:hover
 {
     color: #fff;
-    border-color: #f5365c; 
-    background-color: #f5365c;
+    border-color: #e90e3a; 
+    background-color: #e90e3a;
 }
 .btn-danger:focus,
 .btn-danger.focus
@@ -18372,7 +18372,7 @@ a.text-darker:focus
 }
 .btn:not(:last-child)
 {
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 }
 .btn i:not(:first-child),
 .btn svg:not(:first-child)
