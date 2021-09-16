@@ -3,7 +3,7 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Registrasi akun</title>
+      <title>Sayur Murah | Register</title>
       <link href="style/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
       <link href="style/assets/css/styles.css" rel="stylesheet">
     </head>

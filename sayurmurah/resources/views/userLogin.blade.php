@@ -3,12 +3,12 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Login Akun</title>
+      <title>Sayur Murah | Login</title>
       <link href="style/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
       <link href="style/assets/css/styles.css" rel="stylesheet">
     </head>
     <body>
-       <section class="h-100 w-100" style="box-sizing: border-box; background-color: #f5f5f5">
+    <section class="h-100 w-100" style="box-sizing: border-box; background-color: #f5f5f5">
     <div class="content-4-1 d-flex flex-column align-items-center h-100 flex-lg-row"
       style="font-family: 'Poppins', sans-serif">
       <div class="position-relative d-none d-lg-block h-100 width-left">
