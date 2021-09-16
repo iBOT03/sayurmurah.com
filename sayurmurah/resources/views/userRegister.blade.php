@@ -8,7 +8,13 @@
       <link href="style/assets/css/styles.css" rel="stylesheet">
     </head>
     <body>
-       <section class="h-100 w-100" style="box-sizing: border-box; background-color: #f5f5f5">
+      @if ($message = Session::get('error'))
+      <div class="alert alert-danger alert-block">
+        <button type="button" class="close" data-dismiss="alert">×</button>    
+          <strong>{{ $message }}</strong>
+      </div>
+    @endif
+      <section class="h-100 w-100" style="box-sizing: border-box; background-color: #f5f5f5">
     <div class="content-4-1 d-flex flex-column align-items-center h-100 flex-lg-row"
       style="font-family: 'Poppins', sans-serif">
       <div class="position-relative d-none d-lg-block h-100 width-left">
@@ -27,32 +33,40 @@
           <p class="caption-text">
             Silahkan mengisi data yang dibutuhkan
           </p>
-          <form style="margin-top: 1.75rem" action="" method="post">
+          <form style="margin-top: 1.75rem" action="{{ route('regis') }}" method="post" enctype="multipart/form-data">
+            @csrf
             <div style="margin-top: 1rem">
               <label for="" class="d-block input-label">Nama</label>
               <div class="d-flex w-100 div-input">
-                <input class="input-field border-0" type="name" name="" id="nama" placeholder="Masukkan Nama Lengkap"
+                <input class="input-field border-0" type="name" name="nama" id="nama" placeholder="Masukkan Nama Lengkap"
                   autocomplete="on" required />
               </div>
             </div>
             <div style="margin-top: 1rem">
-              <label for="" class="d-block input-label">Username</label>
+              <label for="" class="d-block input-label">Telepon</label>
               <div class="d-flex w-100 div-input">
-                <input class="input-field border-0" type="name" name="" id="username" placeholder="Masukkan Username"
+                <input class="input-field border-0" type="text" name="telepon" id="nama" placeholder="Masukkan Nomor Telepon"
+                  autocomplete="on" required />
+              </div>
+            </div>
+            <div style="margin-top: 1rem">
+              <label for="" class="d-block input-label">Alamat</label>
+              <div class="d-flex w-100 div-input">
+                <input class="input-field border-0" type="text" name="alamat" id="nama" placeholder="Masukkan Nama Lengkap"
                   autocomplete="on" required />
               </div>
             </div>
             <div style="margin-top: 1rem">
               <label for="" class="d-block input-label">Email</label>
               <div class="d-flex w-100 div-input">
-                <input class="input-field border-0" type="name" name="" id="email" placeholder="Masukkan Email"
+                <input class="input-field border-0" type="name" name="email" id="email" placeholder="Masukkan Email"
                   autocomplete="on" required />
               </div>
             </div>
             <div style="margin-top: 1rem">
               <label for="" class="d-block input-label">Password</label>
               <div class="d-flex w-100 div-input">
-                <input class="input-field border-0" type="password" name="" id="password-content-4-1"
+                <input class="input-field border-0" type="password" name="password" id="password-content-4-1"
                   placeholder="Masukkan Password" minlength="6" maxlength="12" required />
                 <div onclick="togglePassword()">
                   <svg style="margin-left: 0.75rem; cursor: pointer" width="18" height="16" viewBox="0 0 18 16"

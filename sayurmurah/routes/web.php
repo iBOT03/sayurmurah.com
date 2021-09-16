@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\AkunController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,5 +28,7 @@ Route::get('admin/tambahakun', function () {
     return view('admin/kelolaakun/tambahakun');
 });
 
-Route::get('/register', [UserController::class, 'register']);
-Route::get('/login', [UserController::class, 'login']);
+Route::get('register', [AkunController::class, 'showRegister'])->name('regis.show');
+Route::post('register', [AkunController::class, 'Register'])->name('regis');
+Route::get('login', [AkunController::class, 'showLogin'])->name('login.show');
+Route::post('login', [AkunController::class, 'Login'])->name('login');
