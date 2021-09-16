@@ -27,6 +27,9 @@ Route::get('admin/akun', function () {
 Route::get('admin/tambahakun', function () {
     return view('admin/kelolaakun/tambahakun');
 });
+Route::get('admin/detailakun', function () {
+    return view('admin/kelolaakun/detailakun');
+});
 
 Route::get('register', [AkunController::class, 'showRegister'])->name('regis.show');
 Route::post('register', [AkunController::class, 'Register'])->name('regis');
