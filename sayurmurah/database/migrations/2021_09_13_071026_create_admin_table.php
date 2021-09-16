@@ -18,11 +18,10 @@ class CreateAdminTable extends Migration
             $table->char('nama');
             $table->char('email')->unique();
             $table->char('foto');
-            $table->integer('telepon');
+            $table->char('telepon');
             $table->char('password');
-            $table->integer('id_akses');
+            $table->enum('akses', ['SuperAdmin', 'Admin', 'User', 'Mitra']);
             $table->enum('status', ['aktif', 'nonaktif'])->default('aktif');
-            $table->dateTime('time_in_user')->nullable();
             $table->timestamps();
         });
     }

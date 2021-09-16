@@ -15,7 +15,7 @@ class CreateJenisProdukTable extends Migration
     {
         Schema::create('jenis_produk', function (Blueprint $table) {
             $table->id('id_jenis_produk')->index();
-            $table->char('jenis_produk');
+            $table->char('jenis_produk')->unique();
             $table->longText('deskripsi_jenis_produk');
             $table->char('foto_jenis_produk');
             $table->timestamps();

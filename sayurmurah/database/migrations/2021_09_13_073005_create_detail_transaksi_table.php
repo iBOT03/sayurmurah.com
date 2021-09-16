@@ -15,8 +15,8 @@ class CreateDetailTransaksiTable extends Migration
     {
         Schema::create('detail_transaksi', function (Blueprint $table) {
             $table->id('id_detail_transaksi')->index();
-            $table->integer('id_transaksi');
-            $table->integer('id_produk');
+            $table->char('id_transaksi');
+            $table->char('id_produk');
             $table->integer('jumlah_transaksi');
             $table->integer('grand_total');
             $table->timestamps();
