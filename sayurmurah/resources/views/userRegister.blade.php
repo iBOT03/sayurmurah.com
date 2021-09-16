@@ -19,14 +19,14 @@
       style="font-family: 'Poppins', sans-serif">
       <div class="position-relative d-none d-lg-block h-100 width-left">
         <img class="position-absolute img-fluid centered"
-          src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-11.png"
+          src="{{  asset('template/assets/img/driver-icon.PNG') }}"
           alt="" />
       </div>
       <div class="d-flex mx-auto align-items-left justify-content-left width-right mx-lg-0">
         <div class="right mx-lg-0 mx-auto">
           <div class="align-items-center justify-content-center d-lg-none d-flex">
             <img class="img-fluid"
-              src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-11.png"
+              src="{{ asset('template/assets/img/driver-icon.PNG') }}"
               alt="" />
           </div>
           <h3 class="title-text">Buat Akun</h3>
