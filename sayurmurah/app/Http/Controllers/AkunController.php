@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\AkunRequest;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
@@ -32,7 +31,21 @@ class AkunController extends Controller
     
     // Proses Login Menggunakan Library Auth
     public function Login(Request $request){
-        
+        $request->validate([
+        'email'=>'required|email',
+        'password'=>'required|string'
+    ]);
+    $credentials = $request->only('email', 'password');
+
+    if (Auth::attempt($credentials)) {
+        $request->session()->regenerate();
+
+        return redirect()->route('admin.show');
+    }
+
+    return redirect()->route('login.show')->with([
+        'loginError' => 'email atau Password salah',
+    ]);
     }
 
     // Tampilkan Register
@@ -42,29 +55,33 @@ class AkunController extends Controller
 
     // Proses Registrasi User
     public function Register( Request $request){
-    $request->validate([
-        'nama'      => 'required',
-        'alamat'    => 'required',
-        'password'  => 'required',
-        'email'     => 'required|email'
+        // FormRequst Validasi Registrasi akun
+        $request->validate([
+            'nama'      => 'required',
+            'alamat'    => 'required',
+            'password'  => 'required',
+            'email'     => 'required|email'
+        ]);
 
-    ]);
-
-        $user           = new User;
-        $user->nama_user     = $request->nama;
-        $user->password = bcrypt($request->password);
-        $user->email    = $request->email;
-        $user->alamat   = $request->alamat;
-        $user->telepon  = $request->telepon;
+        // Memasukkan data ke Database
+        $user               = new User;
+        $user->nama_user    = $request->nama;
+        $user->password     = bcrypt($request->password);
+        $user->email        = $request->email;
+        $user->alamat       = $request->alamat;
+        $user->telepon      = $request->telepon;
         $user->save();
 
+        // Pesan Ketika berhasil Register Akun dan Gagal Register Akun
         if($user){
-        //redirect dengan pesan sukses
+        // Pesan Ketika Akun Berhasil dibuat dan redirect ke Halaman Login untuk login
         return redirect()->route('login.show')->with(['success' => 'Data Berhasil Disimpan!']);
-    }else{
-        //redirect dengan pesan error
-        return redirect()->route('regis.show')->with(['error' => 'Data Gagal Disimpan!']);
-    }
+
+        }else{
+            //redirect dengan pesan error
+            return redirect()->route('regis.show')->with(['error' => 'Data Gagal Disimpan!']);
+        }
+
     }
 
 }

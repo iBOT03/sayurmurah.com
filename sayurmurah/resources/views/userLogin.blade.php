@@ -19,26 +19,38 @@
       style="font-family: 'Poppins', sans-serif">
       <div class="position-relative d-none d-lg-block h-100 width-left">
         <img class="position-absolute img-fluid centered"
-          src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-11.png"
-          alt="" />
+          src="{{ asset('template/assets/img/driver-icon.PNG') }}"
+          alt="driver-sayur" title="driver-sayurmurah"/>
       </div>
       <div class="d-flex mx-auto align-items-left justify-content-left width-right mx-lg-0">
         <div class="right mx-lg-0 mx-auto">
           <div class="align-items-center justify-content-center d-lg-none d-flex">
             <img class="img-fluid"
-              src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-11.png"
-              alt="" />
+              src="{{ asset('template/assets/img/driver-icon.PNG') }}"
+              alt="driver-sayur" title="driver-sayurmurah"/>
           </div>
           <h3 class="title-text">Login</h3>
           <p class="caption-text">
             Silahkan mengisi data yang dibutuhkan
           </p>
+          @if ($message = Session::get('loginError'))
+            <div class="alert alert-danger alert-block">
+              <button type="button" class="close" data-dismiss="alert">×</button>    
+                <strong>{{ $message }}</strong>
+            </div>
+          @endif
           <form style="margin-top: 1.75rem" action="{{ route('login') }}" method="post">
+            @csrf
             <div style="margin-top: 1rem">
               <label for="" class="d-block input-label">Email</label>
               <div class="d-flex w-100 div-input">
                 <input class="input-field border-0" type="email" name="email" id="email" placeholder="Email Anda"
                   autocomplete="on" required />
+                  @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
               </div>
             </div>
             <div style="margin-top: 1rem">
@@ -54,6 +66,11 @@
                       fill="#CACBCE" />
                   </svg>
                 </div>
+                @error('password')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
               </div>
             </div>
             <button class="btn btn-fill text-white d-block w-100" type="submit">

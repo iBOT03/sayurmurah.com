@@ -19,15 +19,15 @@
       style="font-family: 'Poppins', sans-serif">
       <div class="position-relative d-none d-lg-block h-100 width-left">
         <img class="position-absolute img-fluid centered"
-          src="{{  asset('template/assets/img/driver-icon.PNG') }}"
-          alt="" />
+          src="{{ asset('template/assets/img/driver-icon.PNG') }}"
+          alt="driver-sayur" title="driver-sayurmurah" />
       </div>
       <div class="d-flex mx-auto align-items-left justify-content-left width-right mx-lg-0">
         <div class="right mx-lg-0 mx-auto">
           <div class="align-items-center justify-content-center d-lg-none d-flex">
             <img class="img-fluid"
               src="{{ asset('template/assets/img/driver-icon.PNG') }}"
-              alt="" />
+              alt="driver-sayur" title="driver-sayurmurah" />
           </div>
           <h3 class="title-text">Buat Akun</h3>
           <p class="caption-text">
@@ -45,14 +45,14 @@
             <div style="margin-top: 1rem">
               <label for="" class="d-block input-label">Telepon</label>
               <div class="d-flex w-100 div-input">
-                <input class="input-field border-0" type="text" name="telepon" id="nama" placeholder="Masukkan Nomor Telepon"
+                <input class="input-field border-0" type="text" name="telepon" id="telepon" placeholder="Masukkan Nomor Telepon"
                   autocomplete="on" required />
               </div>
             </div>
             <div style="margin-top: 1rem">
               <label for="" class="d-block input-label">Alamat</label>
               <div class="d-flex w-100 div-input">
-                <input class="input-field border-0" type="text" name="alamat" id="nama" placeholder="Masukkan Nama Lengkap"
+                <input class="input-field border-0" type="text" name="alamat" id="alamat" placeholder="Masukkan Nama Lengkap"
                   autocomplete="on" required />
               </div>
             </div>

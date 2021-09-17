@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AkunController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,12 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('user', ['title' => 'sayurmurah.com']);
+    return view('user', ['title' => 'sayurmurah.com'])->name('home');
 });
 
-Route::get('admin', function () {
-    return view('admin/dashboard');
-});
 Route::get('admin/akun', function () {
     return view('admin/kelolaakun/akun');
 });
@@ -30,8 +28,9 @@ Route::get('admin/tambahakun', function () {
 Route::get('admin/detailakun', function () {
     return view('admin/kelolaakun/detailakun');
 });
-
+Route::get('admin', [AdminController::class, 'index'])->name('admin.show');
 Route::get('register', [AkunController::class, 'showRegister'])->name('regis.show');
 Route::post('register', [AkunController::class, 'Register'])->name('regis');
 Route::get('login', [AkunController::class, 'showLogin'])->name('login.show');
 Route::post('login', [AkunController::class, 'Login'])->name('login');
+
