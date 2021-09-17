@@ -28,9 +28,20 @@ Route::get('admin/tambahakun', function () {
 Route::get('admin/detailakun', function () {
     return view('admin/kelolaakun/detailakun');
 });
+
+// ADMIN
+// Route ke Dashboard Admin
 Route::get('admin', [AdminController::class, 'index'])->name('admin.show');
+
+// LOGIN & REGISTER
+// Route ke Halaman Register
 Route::get('register', [AkunController::class, 'showRegister'])->name('regis.show');
+// Route ke function register / Daftar Akun
 Route::post('register', [AkunController::class, 'Register'])->name('regis');
+// Route ke Halaman Login
 Route::get('login', [AkunController::class, 'showLogin'])->name('login.show');
+// Route ke function Login
 Route::post('login', [AkunController::class, 'Login'])->name('login');
+// Route ke function Logout
+Route::get('logout', [AkunController::class, 'Logout'])->name('logout');
 

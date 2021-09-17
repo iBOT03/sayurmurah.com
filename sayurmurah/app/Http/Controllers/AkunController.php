@@ -81,7 +81,16 @@ class AkunController extends Controller
             //redirect dengan pesan error
             return redirect()->route('regis.show')->with(['error' => 'Data Gagal Disimpan!']);
         }
+    }
 
+    // Function Logout
+    public function Logout(Request $request){
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+    
+        // Kembali ke halaman Login
+        return redirect()->route('login.show');
     }
 
 }
