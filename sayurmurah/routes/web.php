@@ -13,10 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* user */
 Route::get('/', function () {
-    return view('user', ['title' => 'sayurmurah.com']);
+    return view('v_produk', ['title' => 'sayurmurah.com']);
 });
 
+Route::get('registrasi', function () {
+    return view('userRegister');
+});
+
+Route::get('/login', function () {
+    return view('v_login');
+});
+
+
+
+
+/* admin */
 Route::get('admin', function () {
     return view('admin/dashboard');
 });
@@ -25,7 +38,4 @@ Route::get('admin/akun', function () {
 });
 Route::get('admin/tambahakun', function () {
     return view('admin/kelolaakun/tambahakun');
-});
-Route::get('registrasi', function () {
-    return view('userRegister');
 });
