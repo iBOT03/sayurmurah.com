@@ -9,12 +9,6 @@
     </head>
     <body>
     <section class="h-100 w-100" style="box-sizing: border-box; background-color: #f5f5f5">
-      @if ($message = Session::get('success'))
-      <div class="alert alert-success alert-block">
-        <button type="button" class="close" data-dismiss="alert">×</button>    
-          <strong>{{ $message }}</strong>
-      </div>
-    @endif
     <div class="content-4-1 d-flex flex-column align-items-center h-100 flex-lg-row"
       style="font-family: 'Poppins', sans-serif">
       <div class="position-relative d-none d-lg-block h-100 width-left">
@@ -33,7 +27,12 @@
           <p class="caption-text">
             Silahkan mengisi data yang dibutuhkan
           </p>
-          @if ($message = Session::get('loginError'))
+          @if ($message = Session::get('success'))
+      <div class="alert alert-success alert-block">
+        <button type="button" class="close" data-dismiss="alert">×</button>    
+          <strong>{{ $message }}</strong>
+      </div>
+          @elseif ($message = Session::get('loginError'))
             <div class="alert alert-danger alert-block">
               <button type="button" class="close" data-dismiss="alert">×</button>    
                 <strong>{{ $message }}</strong>
