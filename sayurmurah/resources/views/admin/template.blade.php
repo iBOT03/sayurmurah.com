@@ -1,4 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>sayurmurah.com</title>
 @include('admin.template.head')
+</head>
 <body>
     @include('admin.template.sidebar')
     <!-- Main content -->
