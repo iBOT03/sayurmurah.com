@@ -1,9 +1,24 @@
 **Dokumentasi**
+Only Laravel without jetstream
+**USE**
+*install composer
+    "composer install"
+*Migrate Database
+    "php artisan migrate"
+
+**Menulis Template Admin**
+@extends('admin.template')
+@section('breadcrumb')
+.... navigasi
+@endsection
+@section('statistik')
+.... jika diperlukan
+@endsection
+@section('page-content')
+.... konten utama
+@endsection
 
 **DATABASE MIGRATIONS**
-
-**USE**
-php artisan migrate
 
 ***File** :
 sayurmurah->database->migrations
