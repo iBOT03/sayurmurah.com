@@ -1540,6 +1540,11 @@ form.example input[type=text] {
     width: 20px;
 }
 
+.card-title{
+    text-align:center;
+    font-size: 1rem;
+}
+
 .img-sayur{
     width:320px;
 }

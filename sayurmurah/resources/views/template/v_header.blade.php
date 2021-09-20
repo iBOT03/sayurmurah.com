@@ -62,10 +62,10 @@
                             style="color: #317C1E; font-size:x-larges;"></i></div>
                     <div class="btn"><i class="bi bi-bell"
                             style="color: #317C1E; font-size:x-larges;"></i></div>
-                    <a href="registrasi">
+                    <a href="/register">
                         <button type="button" class="btn btn-outline-success">Daftar</button>
                     </a>
-                    <a href="admin">
+                    <a href="/login">
                         <button type="button" class="btn btn-success">Masuk</button>
                     </a>
                 </ul>
