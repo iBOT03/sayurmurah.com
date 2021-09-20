@@ -17,7 +17,7 @@ class CreateUserTable extends Migration
             $table->id('id_user');
             $table->char('nama_user');
             $table->char('email')->unique();
-            $table->char('password', 8);
+            $table->char('password', 100);
             $table->char('telepon');
             $table->text('alamat');
             $table->timestamps();
