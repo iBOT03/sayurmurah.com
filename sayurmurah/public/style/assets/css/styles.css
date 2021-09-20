@@ -58,11 +58,9 @@
 }
 
 .content-4-1 .input-label {
-    height: 21px;
-    width: 44px;
-    left: 35.761474609375px;
-    top: 173.17431640625px;
-    border-radius: nullpx;
+    height: 1.3125rem;
+    left: 22.5rem;
+    top: 10.875rem;
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
@@ -75,7 +73,7 @@
 
 .content-4-1 .div-input {
     font: 300 1rem/1.5rem Poppins, sans-serif;
-    height: 3rem;
+    height: 3.2rem;
     width: 32rem;
     left: 2rem;
     top: 11rem;
@@ -112,7 +110,7 @@
 }
 
 .content-4-1 .input-field {
-    font: 300 1rem/1.5rem Poppins, sans-serif;
+    font: 200 0.8rem/1rem Poppins, sans-serif;
     width: 100%;
     background-color: #fcfdff;
     transition: 0.3s;
@@ -175,11 +173,11 @@
 
 @media (min-width: 992px) {
     .content-4-1 .width-left {
-        width: 52%;
+        width: 53%;
     }
 
     .content-4-1 .width-right {
-        width: 48%;
+        width: 47%;
     }
 
     .content-4-1 .right {

@@ -166,7 +166,7 @@
                                     <span>My profile</span>
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a href="login.html" class="dropdown-item">
+                                <a href="{{ route('logout') }}" class="dropdown-item">
                                     <i class="ni ni-user-run"></i>
                                     <span>Logout</span>
                                 </a>
